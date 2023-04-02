@@ -11,7 +11,7 @@ jobs:
     - name: 📂 Sync files
       uses: SamKirkland/FTP-Deploy-Action@v4.3.4
       with:
-        server: sftp://richard-dobbs.dreamhost.com
+        server:  66.33.212.102
         username: dh_8hmfnw
         password: ${{ secrets.ftp_password }}
         protocol: ftps
