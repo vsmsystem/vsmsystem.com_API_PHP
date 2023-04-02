@@ -1,4 +1,7 @@
-on: push
+on: 
+  push:
+    branches: 
+    - main
 name: 🚀 Deploy website on push
 jobs:
   web-deploy:
@@ -6,14 +9,12 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: 🚚 Get latest code
-      uses: actions/checkout@master
-    
+      uses: actions/checkout@v3
+
     - name: 📂 Sync files
-      uses: SamKirkland/FTP-Deploy-Action@v3.0.0
+      uses: SamKirkland/FTP-Deploy-Action@v4.3.4
       with:
-        server: 66.33.212.102
+        server: richard-dobbs.dreamhost.com
         username: dh_8hmfnw
-        password: ${{ secrets.ftp_password }}
-        protocol: ftps
-        port: 22
-        server-dir: /home/dh_8hmfnw/api.vsmsystem.com/
+        password: ${{ secrets.FTP_PASSWORD }}
+        server-dir: /api.vsmsystem.com/
