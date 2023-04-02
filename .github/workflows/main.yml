@@ -17,3 +17,5 @@ jobs:
         server: richard-dobbs.dreamhost.com
         username: dh_8hmfnw
         password: ${{ secrets.FTP_PASSWORD }}
+        protocol: ftps
+        port: 22
