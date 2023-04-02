@@ -15,4 +15,4 @@ jobs:
         remote-user: dh_8hmfnw
         private-ssh-key: ${{ secrets.SSH_KEY }}
         destination-path: ~/api.vsmsystem.com/
-        rsync-options: No
+        rsync-options: --dry-run --archive --verbose --compress --delete-after --human-readable --exclude=.git* --exclude=.git/ --exclude=README.md --exclude=readme.md --exclude=.gitignore
