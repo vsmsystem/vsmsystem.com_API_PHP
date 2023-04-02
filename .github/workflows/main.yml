@@ -9,7 +9,7 @@ jobs:
       uses: actions/checkout@master
     
     - name: 📂 Sync files
-      uses: SamKirkland/FTP-Deploy-Action@v3.0.0
+      uses: SamKirkland/FTP-Deploy-Action@v4.3.4
       with:
         server: richard-dobbs.dreamhost.com
         username: dh_8hmfnw
