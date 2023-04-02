@@ -16,4 +16,4 @@ jobs:
         password: ${{ secrets.ftp_password }}
         protocol: ftps
         port: 22
-        server-dir: ./api.vsmsystem.com/
+        server-dir: /home/dh_8hmfnw/api.vsmsystem.com
