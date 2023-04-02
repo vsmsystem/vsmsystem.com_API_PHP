@@ -17,3 +17,4 @@ jobs:
         protocol: ftps
         port: 22
         timeout: 60000
+        server-dir: ./api.vsmsystem.com/
